@@ -9,6 +9,8 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    private let searchController = UISearchController(searchResultsController: nil)
+    
     private let tableView: UITableView = {
         let tableView = UITableView()
         return tableView
@@ -19,6 +21,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
+        configureSearchController()
         configureTableView()
         APICaller.shared.fetchArtisanList { [weak self] (result) in
             switch result {
@@ -38,22 +41,58 @@ class HomeViewController: UIViewController {
         tableView.frame = view.bounds
     }
     
+    private func configureSearchController() {
+        navigationItem.searchController = searchController
+        navigationItem.hidesSearchBarWhenScrolling = false
+        searchController.searchBar.delegate = self
+    }
+    
     private func configureTableView() {
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(ArtisanTableViewCell.self, forCellReuseIdentifier: ArtisanTableViewCell.identifier)
         view.addSubview(tableView)
         tableView.dataSource = self
         tableView.delegate = self
     }
 }
 
+extension HomeViewController: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        guard let searched = searchBar.text else {
+            return
+        }
+//        symbol = searchSymbol.uppercased()
+//        searchController.isActive = false
+//        fetchData()
+    }
+}
+
 extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "List of Artisan"
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return artisans.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
-        cell?.textLabel?.text = artisans[indexPath.row].name
-        return cell!
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: ArtisanTableViewCell.identifier) as? ArtisanTableViewCell else {
+            return UITableViewCell()
+        }
+        let artisan = artisans[indexPath.row]
+        let viewModel = ArtisanTableViewCellViewModel(
+            name: artisan.name,
+            avatar: URL(string: "\(artisan.avatar)"),
+            description: artisan.description
+        )
+        cell.configure(with: viewModel)
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let artisan = artisans[indexPath.row]
+        let vc = DetailArtisanViewController(artisan: artisan)
+        vc.navigationItem.largeTitleDisplayMode = .never
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

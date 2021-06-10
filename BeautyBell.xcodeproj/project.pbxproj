@@ -3,11 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27AD15DF0D3A6944F3C5A71C /* Pods_BeautyBellTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5A207C626B074D77E6FD7F1 /* Pods_BeautyBellTests.framework */; };
 		5A585DB5267245E5005A543B /* ArtisanTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A585DB4267245E5005A543B /* ArtisanTableViewCell.swift */; };
+		5A585DB72672591E005A543B /* ArtisanTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A585DB62672591E005A543B /* ArtisanTableViewCellViewModel.swift */; };
+		5A585DB9267264FB005A543B /* DetailArtisanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A585DB8267264FB005A543B /* DetailArtisanViewController.swift */; };
+		5A585DBB26726C34005A543B /* ArtisanInformationCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A585DBA26726C34005A543B /* ArtisanInformationCellViewModel.swift */; };
+		5A585DBD26726C47005A543B /* ArtisanServicesCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A585DBC26726C47005A543B /* ArtisanServicesCellViewModel.swift */; };
 		5A6898C72672005700639368 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6898C62672005700639368 /* AppDelegate.swift */; };
 		5A6898C92672005700639368 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6898C82672005700639368 /* SceneDelegate.swift */; };
 		5A6898CB2672005700639368 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6898CA2672005700639368 /* LoginViewController.swift */; };
@@ -21,6 +26,8 @@
 		5A6898FD26720C6700639368 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6898FC26720C6700639368 /* Extensions.swift */; };
 		5A6898FF2672297200639368 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6898FE2672297200639368 /* APICaller.swift */; };
 		5A68990726722D7600639368 /* Artisan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A68990626722D7600639368 /* Artisan.swift */; };
+		657842639EC1B4C97EFB3FD1 /* Pods_BeautyBell_BeautyBellUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8079C1D10ECDD7D1F8F82A /* Pods_BeautyBell_BeautyBellUITests.framework */; };
+		D58963FC1C19614F193E4D53 /* Pods_BeautyBell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 878FB9127B9E98F7ADBE6778 /* Pods_BeautyBell.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +48,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		011C7D9EFC08BDF4E6BA62C8 /* Pods-BeautyBell-BeautyBellUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeautyBell-BeautyBellUITests.debug.xcconfig"; path = "Target Support Files/Pods-BeautyBell-BeautyBellUITests/Pods-BeautyBell-BeautyBellUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0AEF386F0AE3E775F8AF4F2A /* Pods-BeautyBell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeautyBell.release.xcconfig"; path = "Target Support Files/Pods-BeautyBell/Pods-BeautyBell.release.xcconfig"; sourceTree = "<group>"; };
+		2257D8A8F8025F3DAECF994D /* Pods-BeautyBell-BeautyBellUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeautyBell-BeautyBellUITests.release.xcconfig"; path = "Target Support Files/Pods-BeautyBell-BeautyBellUITests/Pods-BeautyBell-BeautyBellUITests.release.xcconfig"; sourceTree = "<group>"; };
+		35B98A60B8092EA63583EFD1 /* Pods-BeautyBell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeautyBell.debug.xcconfig"; path = "Target Support Files/Pods-BeautyBell/Pods-BeautyBell.debug.xcconfig"; sourceTree = "<group>"; };
+		4F8079C1D10ECDD7D1F8F82A /* Pods_BeautyBell_BeautyBellUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeautyBell_BeautyBellUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A585DB4267245E5005A543B /* ArtisanTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtisanTableViewCell.swift; sourceTree = "<group>"; };
+		5A585DB62672591E005A543B /* ArtisanTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtisanTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		5A585DB8267264FB005A543B /* DetailArtisanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailArtisanViewController.swift; sourceTree = "<group>"; };
+		5A585DBA26726C34005A543B /* ArtisanInformationCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtisanInformationCellViewModel.swift; sourceTree = "<group>"; };
+		5A585DBC26726C47005A543B /* ArtisanServicesCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtisanServicesCellViewModel.swift; sourceTree = "<group>"; };
 		5A6898C32672005700639368 /* BeautyBell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeautyBell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A6898C62672005700639368 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A6898C82672005700639368 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +77,10 @@
 		5A6898FC26720C6700639368 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		5A6898FE2672297200639368 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		5A68990626722D7600639368 /* Artisan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artisan.swift; sourceTree = "<group>"; };
+		878FB9127B9E98F7ADBE6778 /* Pods_BeautyBell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeautyBell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98B1EBA3C69D0CD61E5A2A09 /* Pods-BeautyBellTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeautyBellTests.debug.xcconfig"; path = "Target Support Files/Pods-BeautyBellTests/Pods-BeautyBellTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A5A207C626B074D77E6FD7F1 /* Pods_BeautyBellTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeautyBellTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5C8289C5604D4E9C87533D6 /* Pods-BeautyBellTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeautyBellTests.release.xcconfig"; path = "Target Support Files/Pods-BeautyBellTests/Pods-BeautyBellTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D58963FC1C19614F193E4D53 /* Pods_BeautyBell.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27AD15DF0D3A6944F3C5A71C /* Pods_BeautyBellTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,12 +104,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				657842639EC1B4C97EFB3FD1 /* Pods_BeautyBell_BeautyBellUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		586BC55A12E733371E6B98A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				35B98A60B8092EA63583EFD1 /* Pods-BeautyBell.debug.xcconfig */,
+				0AEF386F0AE3E775F8AF4F2A /* Pods-BeautyBell.release.xcconfig */,
+				011C7D9EFC08BDF4E6BA62C8 /* Pods-BeautyBell-BeautyBellUITests.debug.xcconfig */,
+				2257D8A8F8025F3DAECF994D /* Pods-BeautyBell-BeautyBellUITests.release.xcconfig */,
+				98B1EBA3C69D0CD61E5A2A09 /* Pods-BeautyBellTests.debug.xcconfig */,
+				E5C8289C5604D4E9C87533D6 /* Pods-BeautyBellTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5A6898BA2672005700639368 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +131,8 @@
 				5A6898DC2672005900639368 /* BeautyBellTests */,
 				5A6898E72672005900639368 /* BeautyBellUITests */,
 				5A6898C42672005700639368 /* Products */,
+				586BC55A12E733371E6B98A1 /* Pods */,
+				C3E218669530954E8C4B304D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,6 +185,7 @@
 				5A6898CA2672005700639368 /* LoginViewController.swift */,
 				5A6898F62672045D00639368 /* TabBarViewController.swift */,
 				5A6898F8267204C200639368 /* HomeViewController.swift */,
+				5A585DB8267264FB005A543B /* DetailArtisanViewController.swift */,
 				5A6898FA267204CB00639368 /* ProfileViewController.swift */,
 			);
 			path = Controllers;
@@ -164,6 +203,9 @@
 		5A68990226722B8100639368 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				5A585DB62672591E005A543B /* ArtisanTableViewCellViewModel.swift */,
+				5A585DBA26726C34005A543B /* ArtisanInformationCellViewModel.swift */,
+				5A585DBC26726C47005A543B /* ArtisanServicesCellViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -194,6 +236,16 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		C3E218669530954E8C4B304D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				878FB9127B9E98F7ADBE6778 /* Pods_BeautyBell.framework */,
+				4F8079C1D10ECDD7D1F8F82A /* Pods_BeautyBell_BeautyBellUITests.framework */,
+				A5A207C626B074D77E6FD7F1 /* Pods_BeautyBellTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -201,9 +253,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A6898ED2672005900639368 /* Build configuration list for PBXNativeTarget "BeautyBell" */;
 			buildPhases = (
+				462DB112F5C8475B7BDB4C59 /* [CP] Check Pods Manifest.lock */,
 				5A6898BF2672005700639368 /* Sources */,
 				5A6898C02672005700639368 /* Frameworks */,
 				5A6898C12672005700639368 /* Resources */,
+				98886832D0B67D653E84B78A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -218,6 +272,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A6898F02672005900639368 /* Build configuration list for PBXNativeTarget "BeautyBellTests" */;
 			buildPhases = (
+				0800CF04FE3AC9FA4BFD5E24 /* [CP] Check Pods Manifest.lock */,
 				5A6898D52672005900639368 /* Sources */,
 				5A6898D62672005900639368 /* Frameworks */,
 				5A6898D72672005900639368 /* Resources */,
@@ -236,9 +291,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A6898F32672005900639368 /* Build configuration list for PBXNativeTarget "BeautyBellUITests" */;
 			buildPhases = (
+				C6C7551E82A762CFB35FB398 /* [CP] Check Pods Manifest.lock */,
 				5A6898E02672005900639368 /* Sources */,
 				5A6898E12672005900639368 /* Frameworks */,
 				5A6898E22672005900639368 /* Resources */,
+				0959C27571E807785F66F247 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -318,6 +375,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0800CF04FE3AC9FA4BFD5E24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BeautyBellTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0959C27571E807785F66F247 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BeautyBell-BeautyBellUITests/Pods-BeautyBell-BeautyBellUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BeautyBell-BeautyBellUITests/Pods-BeautyBell-BeautyBellUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BeautyBell-BeautyBellUITests/Pods-BeautyBell-BeautyBellUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		462DB112F5C8475B7BDB4C59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BeautyBell-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98886832D0B67D653E84B78A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BeautyBell/Pods-BeautyBell-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BeautyBell/Pods-BeautyBell-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BeautyBell/Pods-BeautyBell-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6C7551E82A762CFB35FB398 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BeautyBell-BeautyBellUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5A6898BF2672005700639368 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -326,13 +486,17 @@
 				5A68990726722D7600639368 /* Artisan.swift in Sources */,
 				5A6898FB267204CB00639368 /* ProfileViewController.swift in Sources */,
 				5A6898F9267204C200639368 /* HomeViewController.swift in Sources */,
+				5A585DBD26726C47005A543B /* ArtisanServicesCellViewModel.swift in Sources */,
 				5A6898F72672045D00639368 /* TabBarViewController.swift in Sources */,
+				5A585DB9267264FB005A543B /* DetailArtisanViewController.swift in Sources */,
 				5A6898CB2672005700639368 /* LoginViewController.swift in Sources */,
 				5A6898C72672005700639368 /* AppDelegate.swift in Sources */,
 				5A6898C92672005700639368 /* SceneDelegate.swift in Sources */,
 				5A6898FD26720C6700639368 /* Extensions.swift in Sources */,
 				5A585DB5267245E5005A543B /* ArtisanTableViewCell.swift in Sources */,
 				5A6898FF2672297200639368 /* APICaller.swift in Sources */,
+				5A585DB72672591E005A543B /* ArtisanTableViewCellViewModel.swift in Sources */,
+				5A585DBB26726C34005A543B /* ArtisanInformationCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,6 +661,7 @@
 		};
 		5A6898EE2672005900639368 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35B98A60B8092EA63583EFD1 /* Pods-BeautyBell.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -516,6 +681,7 @@
 		};
 		5A6898EF2672005900639368 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AEF386F0AE3E775F8AF4F2A /* Pods-BeautyBell.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -535,6 +701,7 @@
 		};
 		5A6898F12672005900639368 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98B1EBA3C69D0CD61E5A2A09 /* Pods-BeautyBellTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -557,6 +724,7 @@
 		};
 		5A6898F22672005900639368 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5C8289C5604D4E9C87533D6 /* Pods-BeautyBellTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -579,6 +747,7 @@
 		};
 		5A6898F42672005900639368 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 011C7D9EFC08BDF4E6BA62C8 /* Pods-BeautyBell-BeautyBellUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -599,6 +768,7 @@
 		};
 		5A6898F52672005900639368 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2257D8A8F8025F3DAECF994D /* Pods-BeautyBell-BeautyBellUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
