@@ -10,10 +10,22 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    var window: UIWindow?
 
-
+    let userDefault = UserDefaults.standard
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        if userDefault.bool(forKey: "IsSignedIn") {
+            window.rootViewController = TabBarViewController()
+        } else {
+            let nav = UINavigationController(rootViewController: LoginViewController())
+            nav.navigationBar.prefersLargeTitles = true
+            window.rootViewController = nav
+        }
+        window.makeKeyAndVisible()
+        self.window = window
         return true
     }
 

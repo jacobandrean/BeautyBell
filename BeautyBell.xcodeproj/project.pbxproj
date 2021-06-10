@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		5A6898C72672005700639368 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6898C62672005700639368 /* AppDelegate.swift */; };
 		5A6898C92672005700639368 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6898C82672005700639368 /* SceneDelegate.swift */; };
-		5A6898CB2672005700639368 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6898CA2672005700639368 /* ViewController.swift */; };
-		5A6898CE2672005700639368 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A6898CC2672005700639368 /* Main.storyboard */; };
+		5A6898CB2672005700639368 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6898CA2672005700639368 /* LoginViewController.swift */; };
 		5A6898D02672005900639368 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A6898CF2672005900639368 /* Assets.xcassets */; };
 		5A6898D32672005900639368 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A6898D12672005900639368 /* LaunchScreen.storyboard */; };
 		5A6898DE2672005900639368 /* BeautyBellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6898DD2672005900639368 /* BeautyBellTests.swift */; };
 		5A6898E92672005900639368 /* BeautyBellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6898E82672005900639368 /* BeautyBellUITests.swift */; };
+		5A6898F72672045D00639368 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6898F62672045D00639368 /* TabBarViewController.swift */; };
+		5A6898F9267204C200639368 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6898F8267204C200639368 /* HomeViewController.swift */; };
+		5A6898FB267204CB00639368 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6898FA267204CB00639368 /* ProfileViewController.swift */; };
+		5A6898FD26720C6700639368 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6898FC26720C6700639368 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +41,7 @@
 		5A6898C32672005700639368 /* BeautyBell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeautyBell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A6898C62672005700639368 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A6898C82672005700639368 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5A6898CA2672005700639368 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5A6898CD2672005700639368 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5A6898CA2672005700639368 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5A6898CF2672005900639368 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A6898D22672005900639368 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A6898D42672005900639368 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		5A6898E42672005900639368 /* BeautyBellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeautyBellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A6898E82672005900639368 /* BeautyBellUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeautyBellUITests.swift; sourceTree = "<group>"; };
 		5A6898EA2672005900639368 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A6898F62672045D00639368 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		5A6898F8267204C200639368 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5A6898FA267204CB00639368 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		5A6898FC26720C6700639368 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +107,14 @@
 			children = (
 				5A6898C62672005700639368 /* AppDelegate.swift */,
 				5A6898C82672005700639368 /* SceneDelegate.swift */,
-				5A6898CA2672005700639368 /* ViewController.swift */,
-				5A6898CC2672005700639368 /* Main.storyboard */,
 				5A6898CF2672005900639368 /* Assets.xcassets */,
 				5A6898D12672005900639368 /* LaunchScreen.storyboard */,
 				5A6898D42672005900639368 /* Info.plist */,
+				5A6898CA2672005700639368 /* LoginViewController.swift */,
+				5A6898F62672045D00639368 /* TabBarViewController.swift */,
+				5A6898F8267204C200639368 /* HomeViewController.swift */,
+				5A6898FA267204CB00639368 /* ProfileViewController.swift */,
+				5A6898FC26720C6700639368 /* Extensions.swift */,
 			);
 			path = BeautyBell;
 			sourceTree = "<group>";
@@ -233,7 +242,6 @@
 			files = (
 				5A6898D32672005900639368 /* LaunchScreen.storyboard in Resources */,
 				5A6898D02672005900639368 /* Assets.xcassets in Resources */,
-				5A6898CE2672005700639368 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +266,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A6898CB2672005700639368 /* ViewController.swift in Sources */,
+				5A6898FB267204CB00639368 /* ProfileViewController.swift in Sources */,
+				5A6898F9267204C200639368 /* HomeViewController.swift in Sources */,
+				5A6898F72672045D00639368 /* TabBarViewController.swift in Sources */,
+				5A6898CB2672005700639368 /* LoginViewController.swift in Sources */,
 				5A6898C72672005700639368 /* AppDelegate.swift in Sources */,
 				5A6898C92672005700639368 /* SceneDelegate.swift in Sources */,
+				5A6898FD26720C6700639368 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +308,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5A6898CC2672005700639368 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5A6898CD2672005700639368 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5A6898D12672005900639368 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
