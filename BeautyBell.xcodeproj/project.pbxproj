@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A6898C72672005700639368 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6898C62672005700639368 /* AppDelegate.swift */; };
+		5A6898C92672005700639368 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6898C82672005700639368 /* SceneDelegate.swift */; };
+		5A6898CB2672005700639368 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6898CA2672005700639368 /* ViewController.swift */; };
+		5A6898CE2672005700639368 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A6898CC2672005700639368 /* Main.storyboard */; };
+		5A6898D02672005900639368 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A6898CF2672005900639368 /* Assets.xcassets */; };
+		5A6898D32672005900639368 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A6898D12672005900639368 /* LaunchScreen.storyboard */; };
+		5A6898DE2672005900639368 /* BeautyBellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6898DD2672005900639368 /* BeautyBellTests.swift */; };
+		5A6898E92672005900639368 /* BeautyBellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6898E82672005900639368 /* BeautyBellUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A6898DA2672005900639368 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A6898BB2672005700639368 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A6898C22672005700639368;
+			remoteInfo = BeautyBell;
+		};
+		5A6898E52672005900639368 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A6898BB2672005700639368 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A6898C22672005700639368;
+			remoteInfo = BeautyBell;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5A6898C32672005700639368 /* BeautyBell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeautyBell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A6898C62672005700639368 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5A6898C82672005700639368 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5A6898CA2672005700639368 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5A6898CD2672005700639368 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5A6898CF2672005900639368 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A6898D22672005900639368 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5A6898D42672005900639368 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A6898D92672005900639368 /* BeautyBellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeautyBellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A6898DD2672005900639368 /* BeautyBellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeautyBellTests.swift; sourceTree = "<group>"; };
+		5A6898DF2672005900639368 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A6898E42672005900639368 /* BeautyBellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeautyBellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A6898E82672005900639368 /* BeautyBellUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeautyBellUITests.swift; sourceTree = "<group>"; };
+		5A6898EA2672005900639368 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A6898C02672005700639368 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A6898D62672005900639368 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A6898E12672005900639368 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A6898BA2672005700639368 = {
+			isa = PBXGroup;
+			children = (
+				5A6898C52672005700639368 /* BeautyBell */,
+				5A6898DC2672005900639368 /* BeautyBellTests */,
+				5A6898E72672005900639368 /* BeautyBellUITests */,
+				5A6898C42672005700639368 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5A6898C42672005700639368 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A6898C32672005700639368 /* BeautyBell.app */,
+				5A6898D92672005900639368 /* BeautyBellTests.xctest */,
+				5A6898E42672005900639368 /* BeautyBellUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A6898C52672005700639368 /* BeautyBell */ = {
+			isa = PBXGroup;
+			children = (
+				5A6898C62672005700639368 /* AppDelegate.swift */,
+				5A6898C82672005700639368 /* SceneDelegate.swift */,
+				5A6898CA2672005700639368 /* ViewController.swift */,
+				5A6898CC2672005700639368 /* Main.storyboard */,
+				5A6898CF2672005900639368 /* Assets.xcassets */,
+				5A6898D12672005900639368 /* LaunchScreen.storyboard */,
+				5A6898D42672005900639368 /* Info.plist */,
+			);
+			path = BeautyBell;
+			sourceTree = "<group>";
+		};
+		5A6898DC2672005900639368 /* BeautyBellTests */ = {
+			isa = PBXGroup;
+			children = (
+				5A6898DD2672005900639368 /* BeautyBellTests.swift */,
+				5A6898DF2672005900639368 /* Info.plist */,
+			);
+			path = BeautyBellTests;
+			sourceTree = "<group>";
+		};
+		5A6898E72672005900639368 /* BeautyBellUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5A6898E82672005900639368 /* BeautyBellUITests.swift */,
+				5A6898EA2672005900639368 /* Info.plist */,
+			);
+			path = BeautyBellUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A6898C22672005700639368 /* BeautyBell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A6898ED2672005900639368 /* Build configuration list for PBXNativeTarget "BeautyBell" */;
+			buildPhases = (
+				5A6898BF2672005700639368 /* Sources */,
+				5A6898C02672005700639368 /* Frameworks */,
+				5A6898C12672005700639368 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeautyBell;
+			productName = BeautyBell;
+			productReference = 5A6898C32672005700639368 /* BeautyBell.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5A6898D82672005900639368 /* BeautyBellTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A6898F02672005900639368 /* Build configuration list for PBXNativeTarget "BeautyBellTests" */;
+			buildPhases = (
+				5A6898D52672005900639368 /* Sources */,
+				5A6898D62672005900639368 /* Frameworks */,
+				5A6898D72672005900639368 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A6898DB2672005900639368 /* PBXTargetDependency */,
+			);
+			name = BeautyBellTests;
+			productName = BeautyBellTests;
+			productReference = 5A6898D92672005900639368 /* BeautyBellTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5A6898E32672005900639368 /* BeautyBellUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A6898F32672005900639368 /* Build configuration list for PBXNativeTarget "BeautyBellUITests" */;
+			buildPhases = (
+				5A6898E02672005900639368 /* Sources */,
+				5A6898E12672005900639368 /* Frameworks */,
+				5A6898E22672005900639368 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A6898E62672005900639368 /* PBXTargetDependency */,
+			);
+			name = BeautyBellUITests;
+			productName = BeautyBellUITests;
+			productReference = 5A6898E42672005900639368 /* BeautyBellUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A6898BB2672005700639368 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					5A6898C22672005700639368 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					5A6898D82672005900639368 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 5A6898C22672005700639368;
+					};
+					5A6898E32672005900639368 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 5A6898C22672005700639368;
+					};
+				};
+			};
+			buildConfigurationList = 5A6898BE2672005700639368 /* Build configuration list for PBXProject "BeautyBell" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A6898BA2672005700639368;
+			productRefGroup = 5A6898C42672005700639368 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A6898C22672005700639368 /* BeautyBell */,
+				5A6898D82672005900639368 /* BeautyBellTests */,
+				5A6898E32672005900639368 /* BeautyBellUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A6898C12672005700639368 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A6898D32672005900639368 /* LaunchScreen.storyboard in Resources */,
+				5A6898D02672005900639368 /* Assets.xcassets in Resources */,
+				5A6898CE2672005700639368 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A6898D72672005900639368 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A6898E22672005900639368 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A6898BF2672005700639368 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A6898CB2672005700639368 /* ViewController.swift in Sources */,
+				5A6898C72672005700639368 /* AppDelegate.swift in Sources */,
+				5A6898C92672005700639368 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A6898D52672005900639368 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A6898DE2672005900639368 /* BeautyBellTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A6898E02672005900639368 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A6898E92672005900639368 /* BeautyBellUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5A6898DB2672005900639368 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A6898C22672005700639368 /* BeautyBell */;
+			targetProxy = 5A6898DA2672005900639368 /* PBXContainerItemProxy */;
+		};
+		5A6898E62672005900639368 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A6898C22672005700639368 /* BeautyBell */;
+			targetProxy = 5A6898E52672005900639368 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5A6898CC2672005700639368 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A6898CD2672005700639368 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5A6898D12672005900639368 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A6898D22672005900639368 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A6898EB2672005900639368 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5A6898EC2672005900639368 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A6898EE2672005900639368 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6PP5K2C27F;
+				INFOPLIST_FILE = BeautyBell/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacobandrean.BeautyBell;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5A6898EF2672005900639368 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6PP5K2C27F;
+				INFOPLIST_FILE = BeautyBell/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacobandrean.BeautyBell;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5A6898F12672005900639368 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6PP5K2C27F;
+				INFOPLIST_FILE = BeautyBellTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacobandrean.BeautyBellTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeautyBell.app/BeautyBell";
+			};
+			name = Debug;
+		};
+		5A6898F22672005900639368 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6PP5K2C27F;
+				INFOPLIST_FILE = BeautyBellTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacobandrean.BeautyBellTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeautyBell.app/BeautyBell";
+			};
+			name = Release;
+		};
+		5A6898F42672005900639368 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6PP5K2C27F;
+				INFOPLIST_FILE = BeautyBellUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacobandrean.BeautyBellUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BeautyBell;
+			};
+			name = Debug;
+		};
+		5A6898F52672005900639368 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6PP5K2C27F;
+				INFOPLIST_FILE = BeautyBellUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacobandrean.BeautyBellUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BeautyBell;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A6898BE2672005700639368 /* Build configuration list for PBXProject "BeautyBell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A6898EB2672005900639368 /* Debug */,
+				5A6898EC2672005900639368 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A6898ED2672005900639368 /* Build configuration list for PBXNativeTarget "BeautyBell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A6898EE2672005900639368 /* Debug */,
+				5A6898EF2672005900639368 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A6898F02672005900639368 /* Build configuration list for PBXNativeTarget "BeautyBellTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A6898F12672005900639368 /* Debug */,
+				5A6898F22672005900639368 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A6898F32672005900639368 /* Build configuration list for PBXNativeTarget "BeautyBellUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A6898F42672005900639368 /* Debug */,
+				5A6898F52672005900639368 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A6898BB2672005700639368 /* Project object */;
+}
