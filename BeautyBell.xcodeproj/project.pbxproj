@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		27AD15DF0D3A6944F3C5A71C /* Pods_BeautyBellTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5A207C626B074D77E6FD7F1 /* Pods_BeautyBellTests.framework */; };
+		5A155D9326734BCE00099441 /* ArtisanInformationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A155D9226734BCE00099441 /* ArtisanInformationCell.swift */; };
+		5A155D9526734F2300099441 /* ArtisanServicesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A155D9426734F2300099441 /* ArtisanServicesCell.swift */; };
 		5A585DB5267245E5005A543B /* ArtisanTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A585DB4267245E5005A543B /* ArtisanTableViewCell.swift */; };
 		5A585DB72672591E005A543B /* ArtisanTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A585DB62672591E005A543B /* ArtisanTableViewCellViewModel.swift */; };
 		5A585DB9267264FB005A543B /* DetailArtisanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A585DB8267264FB005A543B /* DetailArtisanViewController.swift */; };
@@ -53,6 +55,8 @@
 		2257D8A8F8025F3DAECF994D /* Pods-BeautyBell-BeautyBellUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeautyBell-BeautyBellUITests.release.xcconfig"; path = "Target Support Files/Pods-BeautyBell-BeautyBellUITests/Pods-BeautyBell-BeautyBellUITests.release.xcconfig"; sourceTree = "<group>"; };
 		35B98A60B8092EA63583EFD1 /* Pods-BeautyBell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeautyBell.debug.xcconfig"; path = "Target Support Files/Pods-BeautyBell/Pods-BeautyBell.debug.xcconfig"; sourceTree = "<group>"; };
 		4F8079C1D10ECDD7D1F8F82A /* Pods_BeautyBell_BeautyBellUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeautyBell_BeautyBellUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A155D9226734BCE00099441 /* ArtisanInformationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtisanInformationCell.swift; sourceTree = "<group>"; };
+		5A155D9426734F2300099441 /* ArtisanServicesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtisanServicesCell.swift; sourceTree = "<group>"; };
 		5A585DB4267245E5005A543B /* ArtisanTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtisanTableViewCell.swift; sourceTree = "<group>"; };
 		5A585DB62672591E005A543B /* ArtisanTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtisanTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		5A585DB8267264FB005A543B /* DetailArtisanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailArtisanViewController.swift; sourceTree = "<group>"; };
@@ -196,6 +200,8 @@
 			children = (
 				5A6898D12672005900639368 /* LaunchScreen.storyboard */,
 				5A585DB4267245E5005A543B /* ArtisanTableViewCell.swift */,
+				5A155D9226734BCE00099441 /* ArtisanInformationCell.swift */,
+				5A155D9426734F2300099441 /* ArtisanServicesCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -483,6 +489,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A155D9326734BCE00099441 /* ArtisanInformationCell.swift in Sources */,
 				5A68990726722D7600639368 /* Artisan.swift in Sources */,
 				5A6898FB267204CB00639368 /* ProfileViewController.swift in Sources */,
 				5A6898F9267204C200639368 /* HomeViewController.swift in Sources */,
@@ -492,6 +499,7 @@
 				5A6898CB2672005700639368 /* LoginViewController.swift in Sources */,
 				5A6898C72672005700639368 /* AppDelegate.swift in Sources */,
 				5A6898C92672005700639368 /* SceneDelegate.swift in Sources */,
+				5A155D9526734F2300099441 /* ArtisanServicesCell.swift in Sources */,
 				5A6898FD26720C6700639368 /* Extensions.swift in Sources */,
 				5A585DB5267245E5005A543B /* ArtisanTableViewCell.swift in Sources */,
 				5A6898FF2672297200639368 /* APICaller.swift in Sources */,

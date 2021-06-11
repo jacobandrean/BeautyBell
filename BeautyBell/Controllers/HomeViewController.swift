@@ -17,6 +17,7 @@ class HomeViewController: UIViewController {
     }()
     
     private var artisans: [Artisan] = []
+    private var artisansCopy: [Artisan] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +28,7 @@ class HomeViewController: UIViewController {
             switch result {
             case .success(let model):
                 self?.artisans = model
+                self?.artisansCopy = model
                 DispatchQueue.main.async {
                     self?.tableView.reloadData()
                 }
@@ -60,9 +62,16 @@ extension HomeViewController: UISearchBarDelegate {
         guard let searched = searchBar.text else {
             return
         }
-//        symbol = searchSymbol.uppercased()
-//        searchController.isActive = false
-//        fetchData()
+        artisans = artisansCopy
+        var temp: [Artisan] = []
+        for artisan in artisans {
+            if artisan.name.contains(searched.lowercased()) {
+                temp.append(artisan)
+            }
+        }
+        artisans = temp
+        searchController.isActive = false
+        tableView.reloadData()
     }
 }
 
@@ -93,6 +102,7 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
         let artisan = artisans[indexPath.row]
         let vc = DetailArtisanViewController(artisan: artisan)
         vc.navigationItem.largeTitleDisplayMode = .never
+        vc.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(vc, animated: true)
     }
 }

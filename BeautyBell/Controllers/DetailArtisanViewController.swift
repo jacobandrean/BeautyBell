@@ -39,9 +39,22 @@ class DetailArtisanViewController: UIViewController {
         configureModels(artisan: artisan)
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        collectionView.frame = view.bounds
+    }
+    
     private func configureCollectionView() {
         view.addSubview(collectionView)
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        collectionView.backgroundColor = .systemBackground
+        collectionView.register(
+            ArtisanInformationCell.self,
+            forCellWithReuseIdentifier: ArtisanInformationCell.identifier
+        )
+        collectionView.register(
+            ArtisanServicesCell.self,
+            forCellWithReuseIdentifier: ArtisanServicesCell.identifier
+        )
         collectionView.dataSource = self
     }
     
@@ -72,15 +85,32 @@ extension DetailArtisanViewController: UICollectionViewDataSource, UICollectionV
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        let type = sections[section]
+        switch type {
+        case .artisanInformation(viewModels: _):
+            return 1
+        case .artisanServices(viewModels: let viewModels):
+            return viewModels.count
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) else {
-//            return UICollectionViewCell()
-//        }
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-        return cell
+        let type = sections[indexPath.section]
+        switch type {
+        case .artisanInformation(viewModels: let viewModels):
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ArtisanInformationCell.identifier, for: indexPath) as? ArtisanInformationCell else {
+                return UICollectionViewCell()
+            }
+            cell.configure(with: viewModels)
+            return cell
+        case .artisanServices(viewModels: let viewModels):
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ArtisanServicesCell.identifier, for: indexPath) as? ArtisanServicesCell else {
+                return UICollectionViewCell()
+            }
+            let viewModel = viewModels[indexPath.row]
+            cell.configure(with: viewModel)
+            return cell
+        }
     }
     
     static func createSectionLayout(section: Int) -> NSCollectionLayoutSection {
@@ -97,7 +127,7 @@ extension DetailArtisanViewController: UICollectionViewDataSource, UICollectionV
             let group = NSCollectionLayoutGroup.horizontal(
                 layoutSize: NSCollectionLayoutSize(
                     widthDimension: .fractionalWidth(1),
-                    heightDimension: .absolute(390)
+                    heightDimension: .absolute(150)
                 ),
                 subitem: item,
                 count: 1
@@ -110,7 +140,7 @@ extension DetailArtisanViewController: UICollectionViewDataSource, UICollectionV
             let item = NSCollectionLayoutItem(
                 layoutSize: NSCollectionLayoutSize(
                     widthDimension: .absolute(200),
-                    heightDimension: .absolute(200)
+                    heightDimension: .absolute(160)
                 )
             )
             item.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 2, bottom: 2, trailing: 2)
@@ -118,11 +148,13 @@ extension DetailArtisanViewController: UICollectionViewDataSource, UICollectionV
             let group = NSCollectionLayoutGroup.horizontal(
                 layoutSize: NSCollectionLayoutSize(
                     widthDimension: .absolute(200),
-                    heightDimension: .absolute(400)
+                    heightDimension: .absolute(160)
                 ),
                 subitem: item,
                 count: 1
             )
+            
+            group.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 10, bottom: 2, trailing: 10)
             
             let section = NSCollectionLayoutSection(group: group)
             section.orthogonalScrollingBehavior = .continuous
